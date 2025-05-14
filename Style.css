@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Charles Joseph Tancrède Fils, un Jeune Data analyst , Ingénieur-Agronome, né le 15 septembre 2001 à Petit-Goave.">
+    <title>Charles Joseph Tancrède Fils</title>
+    <link rel="stylesheet" href="Style.css"> 
+    <!-- Link box icons -->
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body>
+  <!-- Heater -->
+    <header>
+        /* <a href="#" class="logo">Charles Joseph Tancrède Fils</a>
+        <bx class="bx bx-menu" id="menu-icon"></bx> */
+        <ul class="navbar">
+        <li><a href="#">ACCUEIL</a></li>
+        <li><a href="#"></a>COMPETENCES</li>
+        <li><a href="#">EXPERIENCE</a></li>
+        <li><a href="#">EDUCATION</a></li>
+        <li><a href="#">PORTFOLIO</a></li>
+        <li><a href="#"</a>RECOMMANDATION</li>
+        <li><a href="#"</a>CONTACT</li>
+        </ul>
+    </header>
+
+    <div><div class="container">
+        <div class="content">
+            
+        </div>
+
+  
+
+   
+
+    
+</body>
+</html>
