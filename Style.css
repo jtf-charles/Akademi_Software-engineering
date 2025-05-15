@@ -1,42 +1,145 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Charles Joseph Tancrède Fils, un Jeune Data analyst , Ingénieur-Agronome, né le 15 septembre 2001 à Petit-Goave.">
-    <title>Charles Joseph Tancrède Fils</title>
-    <link rel="stylesheet" href="Style.css"> 
-    <!-- Link box icons -->
-    <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
 
-</head>
-<body>
-  <!-- Heater -->
-    <header>
-        /* <a href="#" class="logo">Charles Joseph Tancrède Fils</a>
-        <bx class="bx bx-menu" id="menu-icon"></bx> */
-        <ul class="navbar">
-        <li><a href="#">ACCUEIL</a></li>
-        <li><a href="#"></a>COMPETENCES</li>
-        <li><a href="#">EXPERIENCE</a></li>
-        <li><a href="#">EDUCATION</a></li>
-        <li><a href="#">PORTFOLIO</a></li>
-        <li><a href="#"</a>RECOMMANDATION</li>
-        <li><a href="#"</a>CONTACT</li>
-        </ul>
-    </header>
+:root {
+  --main-color: #8B2C2C;       /* Rouge bordeaux */
+  --accent-color: #C9B37F;     /* Or doux */
+  --bg-color: #DDE6F0;         /* Bleu-gris clair */
+  --text-color: #1A1A1A;       /* Gris anthracite */
+  --secondary-bg: #E3C6B1;     /* Beige rosé */
+  --highlight-color: #5C3A2D;  /* Brun chaud */
+  --font-main: 'Poppins', sans-serif;
+}
 
-    <div><div class="container">
-        <div class="content">
-            
-        </div>
+html {
+    font-size: 16px; /* Base font size */
+}
 
-  
+/* img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+} */
 
-   
+/* html {
+  scroll-behavior: smooth;
+} */
 
+/* header */
+header {
+    background-color:#d82c2e;
+    color: white;
+    /* display: flex; */
+    min-height: 8vh;
     
-</body>
-</html>
+}
+
+/* .navbar a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+} */
+
+/* .navbar {
+    background-color: aqua;
+    display: flex;
+    justify-content:space-around;
+    width: 75%;
+    margin: auto;
+}  */
+
+
+/* Structure de base */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--main-color);
+  color: white;
+  position: relative;
+  flex-wrap: wrap;
+} 
+
+/* Logo */
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--accent-color);
+  flex-grow: 1;
+  gap: 1.5rem;
+  height: 1.8rem;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight:600;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  background-color: white;
+  color: var(--main-color);
+  transform: scale(1.1); /* Agrandit sans affecter les autres */
+   border-radius: 5%;
+}
+/* Menu hamburger pour mobile */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+
+/* Cacher la checkbox */
+.menu-toggle {
+  display: none;
+}
+
+/* Responsive - mobile */
+@media (max-width: 768px) {
+  .top-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    gap: 1rem;
+    background-color: var(--main-color);
+    padding: 1rem 2rem;
+  }
+
+  /* Quand la checkbox est cochée, on affiche le menu */
+  .menu-toggle:checked + .menu-icon + .navbar {
+    display: flex;
+  }
+}
