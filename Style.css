@@ -115,7 +115,7 @@ header {
 }
 
 /* Responsive - mobile */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .top-header {
     flex-direction: column;
     align-items: flex-start;
@@ -131,14 +131,53 @@ header {
   .navbar {
     display: none;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     margin-top: 1rem;
     gap: 1rem;
     background-color: var(--main-color);
     padding: 1rem 2rem;
-  }
+  } */
 
   /* Quand la checkbox est cochée, on affiche le menu */
+  /* .menu-toggle:checked + .menu-icon + .navbar {
+    display: flex;
+  }
+} */
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+    position: absolute;
+    top: 100%; /* juste en dessous du header */
+    right: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    background-color: var(--main-color);
+    gap: 1rem;
+    padding: 1rem 2rem;
+    z-index: 1000;
+  }
+
+  .top-header {
+    position: relative; /* pour que navbar se positionne par rapport à lui */
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    z-index: 1100;
+  }
+
   .menu-toggle:checked + .menu-icon + .navbar {
     display: flex;
   }
