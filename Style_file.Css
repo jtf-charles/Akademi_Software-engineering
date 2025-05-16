@@ -128,7 +128,7 @@ html {
 #banner {
   background:#8B2C2C; /* ou une image de fond si tu veux */
    width: 100%;
-  margin-top: 80px; /* pour compenser le header fixe */
+  margin-top: 3.8rem; /* pour compenser le header fixe */
 
 }
 
@@ -142,8 +142,8 @@ html {
   flex-wrap: wrap;
   width: 100%;
   min-height: 80vh;
-  margin-bottom: 1rem;
-  /* background-color:aqua;  */
+  padding:1vh;
+  /* background-color:aqua;   */
 }
 
 /* Image de profil */
@@ -300,4 +300,205 @@ font-family: 'Poppins', sans-serif;
         margin-bottom: 1rem;
     }
    
+}
+
+
+
+/* About Section */
+/* .about-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  padding: 1.2rem 3rem;
+  gap: 4rem;
+  background-color: #f8f8f8;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.about-header .icone{
+  padding: 1rem;
+}
+/* Responsive image */
+@media (max-width: 768px) {
+  .about-image img {
+    width: 250px;
+    height: auto;
+    
+  } 
+  .about-text p{
+    padding: 0rem;
+  }
+
+  .about-container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+}
+
+.about-text {
+  max-width: 600px;
+  color: #1c1c1c;
+}
+
+.about-text h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #111;
+}
+
+.about-text p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  font-size: clamp(1rem, 0.1vw, 1.1rem);
+  line-height: 1.7;
+  color: #333;
+  text-align: justify;
+  border-left: 1rem solid var(--main-color);
+  padding-left: 1rem 
+}
+
+
+
+
+/* header in about section */
+.about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  margin: 1.5rem 1.5rem;
+  background-color:#E3C6B1;
+}
+
+.about-header h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: var(--main-color);
+  font-size: clamp(1.8rem, 4vw, 3.5rem); /* 👈 taille responsive */
+  margin: 0;
+  padding-bottom: 0.5rem;
+  
+}
+
+.underline {
+  width: 6rem;
+  height: 0.3rem;
+  background-color: var(--main-color);
+  border-radius: 2px;
+}
+
+
+/* Skills section ***************************************************************************/
+/* Section globale */
+/* Section globale */
+#skills {
+  background-color: #8c2e2e;  /* Bordeaux adapté */
+  color: #ffffff;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+#skills .underline {
+  width: 6rem;
+  height: 0.3rem;
+  background-color:white;
+  border-radius: 2px;
+  margin: auto;
+  margin-bottom: 1.5rem ;
+}
+#skills h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.8rem, 2vw, 3.5rem); /* 👈 taille responsive */
+  margin: 0;
+  padding-bottom: 1.8rem;
+}
+
+/* Container des cartes */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* Style de chaque carte */
+.skill-card {
+  background-color: #1c1c1c;
+  border: 2px solid #00c0f0;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  transition: transform 0.3s ease, border-color 0.3s, box-shadow 0.3s;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 0 12px rgba(0, 192, 240, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Effet au survol */
+.skill-card:hover {
+  transform: translateY(-5px);
+  border-color: #00ffcc;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.25);
+}
+
+/* Icône */
+.skill-card i {
+  font-size: 2.5rem;
+  color: #00c0f0;
+  margin-bottom: 1rem;
+}
+
+/* Titre */
+.skill-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+/* Lien "Voir plus" */
+.skill-link {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #00c0f0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.2s;
+  border-bottom: 1px solid transparent;
+}
+
+.skill-link:hover {
+  color: #00ffcc;
+  transform: translateX(3px);
+  border-bottom: 1px solid #00ffcc;
 }
