@@ -25,10 +25,10 @@
 
         <!-- NAVIGATION -->
         <nav class="navbar">
-            <a href="#">Accueil</a>
-            <a href="#">Compétences</a>
-            <a href="#">Expérience</a>
-            <a href="#">Éducation</a>
+            <a href="#banner">Accueil</a>
+            <a href="#skills">Compétences</a>
+            <a href="#experience">Expérience</a>
+            <a href="#education">Éducation</a>
             <a href="#">Portfolio</a>
             <a href="#">Recommandation</a>
             <!-- <a href="#">Contact</a> -->
@@ -56,7 +56,7 @@
                     </div>  
                 
                     <div class="btn-container">
-                        <a href="#" class="btn">Voir mon portfolio</a>
+                        <a href="CV_Tancrede.pdf" download class="btn">Télécharger mon CV</a>
                         <a href="#" class="btn">Me contacter</a>
                     </div>
                     
@@ -142,74 +142,103 @@
 
         <section id="experience">
             <h2>Aperçu de quelques expériences professionnelles</h2>
-            <div class="experience-container">
-                <div class="experience_item">
-                    <h1>PAROLE ET ACTION</h1>
-                    <h2>Assistant PMEL</h2>
-                    <img src="PA.jpg" alt="Logo PAROLE ET ACTION" class="logo-experience">
-                    <p>Février 2025 - Aujourd'hui</p>
-                    <a href="#" class="btn_Details">Voir plus de détails</a>
+            <div class="underline"></div> 
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <img src="PA.png" alt="Logo PAROLE ET ACTION" class="experience-logo">
+                        <h3>Parole et Action</h3>
+                    </div>
+                    <p class="job-title">Assistant PMEL</p>
+                    <p class="experience-date">Février 2025 – Aujourd’hui</p>
+                    <a href="#" class="experience-link">Voir plus</a>
                 </div>
-                <div class="experience_item">
-                    <h1>MEDCINS SANS FRONTIERES</h1>
-                    <h2>DATA SUPERVISOR</h2>
-                    <img src="msf.jpg" alt="Logo MSF" class="logo-experience">
-                    <p>Novembre 2024 - Février 2025</p>
-                    <a href="#" class="btn_Details">Voir plus de détails</a>
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <img src="msf1.png" alt="Logo Médecins Sans Frontières" class="experience-logo">
+                        <h3>Médecins Sans Frontières</h3>
+                    </div>
+                    <p class="job-title">Data Supervisor</p>
+                    <p class="experience-date">Novembre 2024 – Février 2025</p>
+                    <a href="#" class="experience-link">Voir plus</a>
                 </div>
-                <div class="experience_item">
-                    <h1>DIGICEL</h1>
-                    <h2>Business Risk analyst</h2>
-                    <img src="digicel.jpg" alt="Logo DIGICEL" class="logo-experience">
-                    <p>Octobre 2023 - Novembre 2024</p>
-                    <a href="#" class="btn_Details">Voir plus de détails</a>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <img src="digi4.jpg" alt="Logo Digicel" class="experience-logo">
+                        <h3>Digicel</h3>
+                    </div>
+                    <p class="job-title">Business Risk Analyst</p>
+                    <p class="experience-date">Octobre 2023 – Novembre 2024</p>
+                    <a href="#" class="experience-link">Voir plus</a>
                 </div>
-                <div class="experience_item">
-                    <h1>MARNDR|PARSA</h1>
-                    <h2>Stagiaire</h2>
-                    <img src="MARNDR.jpg" alt="Logo MARNDR" class="logo-experience">
-                    <p>Septembre 2024 - Novembre 2024</p>
-                    <a href="#" class="btn_Details">Voir plus de détails</a>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <img src="MARNDR1.jpg" alt="Logo MARNDR" class="experience-logo">
+                        <h3>MARNDR / PARSA</h3>
+                    </div>
+                    <p class="job-title">Stagiaire</p>
+                    <p class="experience-date">Septembre 2024 – Novembre 2024</p>
+                    <a href="#" class="experience-link">Voir plus</a>
                 </div>
+
             </div>
         </section>
 
         <section id="education">
             <h2>Mon parcours académique</h2>
-            <div class="education-container">
-                <div class="education_item">
-                    <h1>Université d'État d'Haïti</h1>
-                    <h2>Ingénieur Agronome</h2>
-                    <p>2019 - 2024</p>
-                    <a href="#" class="btn_Details">Voir plus de détails</a>
+            <div class="underline"></div> 
+
+            <div class="education-grid">
+                
+                <div class="education-card">
+                    <div class="education-header">
+                        <img src="ueh.jpg" alt="Logo UEH" class="education-logo">
+                        <h3>Université d'État d'Haïti</h3>
+                    </div>
+                    <p class="education-degree">Ingénieur Agronome</p>
+                    <p class="education-date">2019 – 2024</p>
+                    <a href="https://ueh.edu.ht/category/actualites/" class="education-link">Voir plus</a>
                 </div>
-                <div class="education_item">
-                    <h1>Le Wagon</h1>
-                    <h2>Data Analyst</h2>
-                    <p>Mai 2023 - Septembre 2023</p>
-                    <a href="#" class="btn_Details">Voir plus de détails</a>
+
+                <div class="education-card">
+                    <div class="education-header">
+                        <img src="wagon2.png" alt="Logo Le Wagon" class="education-logo">
+                        <h3>Le Wagon</h3>
+                    </div>
+                    <p class="education-degree">Data Analyst</p>
+                    <p class="education-date">Mai 2023 – Septembre 2023</p>
+                    <a href="https://www.lewagon.com/fr" class="education-link">Voir plus</a>
                 </div>
+
             </div>
         </section>
 
-        <footer>
-            <div class="footer-content">
-                <h3>Contactez-moi</h3>
-                <p>Vous pouvez me contacter par e-mail à l'adresse suivante : <a href="mailto:charles.tancrede@example.com">charles.tancrede@example.com</a></p>
-                <p>Ou me suivre sur mes réseaux sociaux :</p>
-                <div class="social-links">
-                    <a href="#"><i class='bx bxl-facebook'></i></a>
-                    <a href="#"><i class='bx bxl-twitter'></i></a>
-                    <a href="#"><i class='bx bxl-linkedin'></i></a>
-                    <a href="#"><i class='bx bxl-github'></i></a>
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-info">
+                    <h3>Charles Joseph Tancrède Fils</h3>
+                    <p>Ingénieur Agronome & Data Analyst</p>
+                    <p class="mail">Email : <a href="mailto:charlesjosephtancredefils2001@gmail.com">charlesjosephtancredefils2001@gmail.com</a></p>
                 </div>
-                <p>&copy; 2023 Charles Joseph Tancrède Fils. Tous droits réservés.</p>
+
+                <div class="footer-social">
+                    <h4>Suivez-moi</h4>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/joseph-tancrede-fils-charles-aaa112262/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/jtf-charles"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/share/15JL5TBBTR/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/fils_tancrede?t=jsZsfFP_lRB5SbQJVN1QmQ&s=09"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
             </div>
+
             <div class="footer-bottom">
-                <p>Développé par Charles Joseph Tancrède Fils</p>
-                <p>Merci de votre visite !</p>
+                <p>&copy; 2025 Charles Joseph Tancrède Fils. Tous droits réservés.</p>
             </div>
         </footer>
+
     </main>        
 </body>
 </html>

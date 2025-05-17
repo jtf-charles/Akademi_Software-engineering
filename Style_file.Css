@@ -23,7 +23,9 @@ html {
 }
 /* Fin reset et propriétés racines */
 
-
+html {
+  scroll-behavior: smooth;
+}
 /* STRUCTURE DE BASE header***************************************************************************/
 .top-header {
   display: flex;
@@ -450,7 +452,8 @@ font-family: 'Poppins', sans-serif;
 /* Style de chaque carte */
 .skill-card {
   background-color: #1c1c1c;
-  border: 2px solid #00c0f0;
+  /* border: 2px solid #00c0f0; */
+  border: 2px solid #C9B37F;
   border-radius: 12px;
   padding: 2rem 1.5rem;
   transition: transform 0.3s ease, border-color 0.3s, box-shadow 0.3s;
@@ -472,8 +475,9 @@ font-family: 'Poppins', sans-serif;
 /* Icône */
 .skill-card i {
   font-size: 2.5rem;
-  color: #00c0f0;
-  margin-bottom: 1rem;
+  /* color: #00c0f0; */
+  color:#C9B37F;
+  margin-bottom: 2rem;
 }
 
 /* Titre */
@@ -490,9 +494,11 @@ font-family: 'Poppins', sans-serif;
 .skill-link {
   display: inline-block;
   font-size: 0.9rem;
-  color: #00c0f0;
+  /* color: #00c0f0; */
+  color:cadetblue;
   text-decoration: none;
   font-weight: 500;
+  margin-top: 1rem;
   transition: color 0.3s, transform 0.2s;
   border-bottom: 1px solid transparent;
 }
@@ -500,5 +506,291 @@ font-family: 'Poppins', sans-serif;
 .skill-link:hover {
   color: #00ffcc;
   transform: translateX(3px);
-  border-bottom: 1px solid #00ffcc;
+  /* border-bottom: 1px solid #00ffcc; */
+   border-bottom: 1px solid #C9B37F;
+}
+
+
+
+/* experiences section **************************************************************************/
+/* SECTION GLOBALE */
+#experience {
+  /* background-color: #f5f7fa; */
+  background-color:white;
+  padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 4vw, 3rem);
+  color: #1c1c1c;
+}
+
+#experience .underline {
+  width: 6rem;
+  height: 0.3rem;
+  border-radius: 2px;
+  margin: auto;
+  margin-bottom: 1.5rem ;
+}
+
+
+#experience h2 {
+  text-align: center;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color:#8c2e2e;
+  font-size: 2.2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* CONTAINER FLEX */
+.experience-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1rem, 3vw, 2rem);
+  justify-content: center;
+}
+
+/* CARTE D’EXPÉRIENCE */
+.experience-card {
+  /* background-color: #ffffff; */
+ background:#e9ecef ;
+  border-radius: 12px;
+  padding: clamp(1rem, 2vw, 1.5rem);
+  flex: 1 1 clamp(280px, 45%, 400px);  /* carte responsive */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* EN-TÊTE : LOGO + NOM */
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.experience-logo {
+  width: clamp(40px, 8vw, 60px);
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+/* NOM INSTITUTION */
+.experience-header h3 {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: 600;
+  /* color: #1a1a1a; */
+  color:#8c2e2e;
+  margin: 0;
+}
+
+/* TITRE DU POSTE */
+.job-title {
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  font-weight: 500;
+  /* color: #444; */
+  color: #8c2e2e;
+  margin: 0.2rem 0;
+}
+
+/* DATES */
+.experience-date {
+  font-size: clamp(0.85rem, 1.2vw, 1rem);
+  color: #666;
+  margin: 0;
+  font-style: italic;
+}
+
+/* LIEN "Voir plus" */
+.experience-link {
+  font-size: clamp(0.85rem, 1.2vw, 1rem);
+  color: #0066ff;
+  font-weight: 500;
+  text-decoration: none;
+  align-self: flex-start;
+  margin-top: auto;
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.experience-link:hover {
+  color: #004bb1;
+  border-bottom: 1px solid #004bb1;
+}
+
+
+
+
+/* Education section */
+/* SECTION EDUCATION */
+#education {
+  background-color:#8c2e2e;
+  padding: clamp(2rem, 5vw, 4rem);
+  color: white;
+}
+
+#education h2 {
+  text-align: center;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+#education .underline {
+  width: 60px;
+  height: 4px;
+  background-color:white;
+  margin: 0 auto clamp(2rem, 3vw, 2.5rem);
+  border-radius: 2px;
+}
+
+/* GRID FLEXIBLE */
+.education-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1rem, 3vw, 2rem);
+  justify-content: center;
+}
+
+/* CARTE INDIVIDUELLE */
+.education-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: clamp(1rem, 2vw, 1.5rem);
+  flex: 1 1 clamp(280px, 45%, 400px);  /* responsive */
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* EN-TÊTE : LOGO + NOM ÉCOLE */
+.education-header {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.8rem, 2vw, 1.2rem);
+}
+
+.education-logo {
+  width: clamp(40px, 8vw, 60px);
+  height: auto;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+/* NOM ÉCOLE */
+.education-header h3 {
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  font-weight: 600;
+  margin: 0;
+  color:#8c2e2e;
+}
+
+/* DIPLÔME OU FORMATION */
+.education-degree {
+  font-size: clamp(0.95rem, 1.6vw, 1.1rem);
+  font-weight: 500;
+  /* color: #444; */
+  color:#8c2e2e;
+  margin: 0;
+}
+
+/* DATES */
+.education-date {
+  font-size: clamp(0.85rem, 1.2vw, 1rem);
+  color: #666;
+  margin: 0;
+  font-style: italic;
+}
+
+/* LIEN "VOIR PLUS" */
+.education-link {
+  font-size: clamp(0.85rem, 1.2vw, 1rem);
+  color: #0077cc;
+  font-weight: 500;
+  text-decoration: none;
+  align-self: flex-start;
+  margin-top: auto;
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.education-link:hover {
+  color: #005fa3;
+  border-bottom: 1px solid #005fa3;
+}
+
+
+/* Footer section ***************************************************************/
+.site-footer {
+  background-color: #e9ecef ;
+  color: #1c1c1c;
+  padding: clamp(2rem, 4vw, 3.5rem) clamp(1rem, 6vw, 3rem);
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(28, 28, 28, 0.2);
+  padding-bottom: 2rem;
+}
+
+.footer-info h3 {
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  margin-bottom: 0.5rem;
+  color: #1c1c1c;
+}
+
+.footer-info p,
+.footer-info a {
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-social h4 {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  margin-bottom: 0.7rem;
+  color: #1c1c1c;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: #003366;
+  font-size: 1.4rem;
+  transition: color 0.3s;
+}
+
+.mail a{
+color:#004bb1
+}
+.social-icons a:hover {
+  color: #1a75ff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #333;
 }
